@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="helper.TestRunner" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="hanifas-MacBook-Pro.local" time="0.0">
+  <properties/>
+  <system-out><![CDATA[@SmokeTest
+Feature: Player in Youtube Music
+  
+  I want to play music video using player
+
+  Scenario: Non Login User start a song from Home page and see advertisement ?[90m# player.feature:6?[0m
+    ?[32mGiven ?[0m?[32muser open Youtube Music homepage?[0m                                   ?[90m# BaseSteps.openYoutubeMusic()?[0m
+    ?[32mAnd ?[0m?[32muser see Music Youtube Home page?[0m                                     ?[90m# BaseSteps.validateHomePage()?[0m
+    ?[32mWhen ?[0m?[32muser click the first song in Quick picks section?[0m                    ?[90m# BaseSteps.clickFirstSong()?[0m
+    ?[32mThen ?[0m?[32muser redirected to music video screen?[0m                               ?[90m# BaseSteps.validateMusicVideoScreen()?[0m
+    ?[32mAnd ?[0m?[32muser verify ads is exist?[0m                                             ?[90m# BaseSteps.validateAds()?[0m
+    ?[32mAnd ?[0m?[32muser verify music video start?[0m                                        ?[90m# BaseSteps.validateMusicVideo()?[0m
+    ?[32mAnd ?[0m?[32muser see autoplay list in the right section of the screen?[0m            ?[90m# BaseSteps.validateAutoPlay()?[0m
+    ?[32mAnd ?[0m?[32muser see video control bar in the bottom of the screen?[0m               ?[90m# BaseSteps.validateControlBar()?[0m
+    ?[32mAnd ?[0m?[32muser close browser?[0m                                                   ?[90m# BaseSteps.closeBrowser()?[0m
+@SmokeTest
+Feature: Playlist in Youtube Music
+  
+  I want to create a new playlist
+Element with locator : null is not present!
+Element with locator : null is not present!
+Element with locator : null is not present!
+
+  Scenario: User can create a new playlist                                  ?[90m# playlist.feature:6?[0m
+    ?[32mGiven ?[0m?[32muser open Youtube Music homepage?[0m                                  ?[90m# BaseSteps.openYoutubeMusic()?[0m
+    ?[32mAnd ?[0m?[32muser see Music Youtube Home page?[0m                                    ?[90m# BaseSteps.validateHomePage()?[0m
+    ?[32mAnd ?[0m?[32muser ?[0m?[32m?[1mHanifa?[0m?[32m login using user ?[0m?[32m?[1mhanifanur.test?[0m?[32m and password ?[0m?[32m?[1mhanifatest?[0m ?[90m# BaseSteps.login(String,String,String)?[0m
+    ?[32mAnd ?[0m?[32muser go to ?[0m?[32m?[1mhttps://music.youtube.com/library/playlists?[0m              ?[90m# BaseSteps.goToURL(String)?[0m
+    ?[32mWhen ?[0m?[32muser create a New Playlist?[0m                                         ?[90m# BaseSteps.tapNewPlaylist()?[0m
+    ?[32mAnd ?[0m?[32muser verify the new created playlist?[0m                                ?[90m# BaseSteps.verifyNewPlaylist()?[0m
+    ?[32mAnd ?[0m?[32muser close browser?[0m                                                  ?[90m# BaseSteps.closeBrowser()?[0m
+@SmokeTest
+Feature: Search in Youtube Music
+  
+  I want search a song with exact keyword and get result from all sections
+
+  Scenario: User can search music video based on keyword           ?[90m# search.feature:6?[0m
+    ?[32mGiven ?[0m?[32muser open Youtube Music homepage?[0m                         ?[90m# BaseSteps.openYoutubeMusic()?[0m
+    ?[32mAnd ?[0m?[32muser see Music Youtube Home page?[0m                           ?[90m# BaseSteps.validateHomePage()?[0m
+    ?[32mWhen ?[0m?[32muser Search song with exact keyword ?[0m?[32m?[1mRaisa?[0m                 ?[90m# BaseSteps.searchKeyword(String)?[0m
+    ?[32mAnd ?[0m?[32muser press Enter?[0m                                           ?[90m# BaseSteps.pressEnterKey()?[0m
+    ?[32mThen ?[0m?[32muser verify the result page will appear with ?[0m?[32m?[1mall?[0m?[32m sections?[0m ?[90m# BaseSteps.verifySearchResultPage(String)?[0m
+    ?[32mAnd ?[0m?[32muser close browser?[0m                                         ?[90m# BaseSteps.closeBrowser()?[0m
+
+3 Scenarios (?[32m3 passed?[0m)
+22 Steps (?[32m22 passed?[0m)
+0m46.597s
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

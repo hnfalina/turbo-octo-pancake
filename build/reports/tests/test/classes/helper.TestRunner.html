@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class helper.TestRunner</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class helper.TestRunner</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/helper.html">helper</a> &gt; TestRunner</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">0</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">-</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">-</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>@SmokeTest
+Feature: Player in Youtube Music
+  
+  I want to play music video using player
+
+  Scenario: Non Login User start a song from Home page and see advertisement ?[90m# player.feature:6?[0m
+    ?[32mGiven ?[0m?[32muser open Youtube Music homepage?[0m                                   ?[90m# BaseSteps.openYoutubeMusic()?[0m
+    ?[32mAnd ?[0m?[32muser see Music Youtube Home page?[0m                                     ?[90m# BaseSteps.validateHomePage()?[0m
+    ?[32mWhen ?[0m?[32muser click the first song in Quick picks section?[0m                    ?[90m# BaseSteps.clickFirstSong()?[0m
+    ?[32mThen ?[0m?[32muser redirected to music video screen?[0m                               ?[90m# BaseSteps.validateMusicVideoScreen()?[0m
+    ?[32mAnd ?[0m?[32muser verify ads is exist?[0m                                             ?[90m# BaseSteps.validateAds()?[0m
+    ?[32mAnd ?[0m?[32muser verify music video start?[0m                                        ?[90m# BaseSteps.validateMusicVideo()?[0m
+    ?[32mAnd ?[0m?[32muser see autoplay list in the right section of the screen?[0m            ?[90m# BaseSteps.validateAutoPlay()?[0m
+    ?[32mAnd ?[0m?[32muser see video control bar in the bottom of the screen?[0m               ?[90m# BaseSteps.validateControlBar()?[0m
+    ?[32mAnd ?[0m?[32muser close browser?[0m                                                   ?[90m# BaseSteps.closeBrowser()?[0m
+@SmokeTest
+Feature: Playlist in Youtube Music
+  
+  I want to create a new playlist
+Element with locator : null is not present!
+Element with locator : null is not present!
+Element with locator : null is not present!
+
+  Scenario: User can create a new playlist                                  ?[90m# playlist.feature:6?[0m
+    ?[32mGiven ?[0m?[32muser open Youtube Music homepage?[0m                                  ?[90m# BaseSteps.openYoutubeMusic()?[0m
+    ?[32mAnd ?[0m?[32muser see Music Youtube Home page?[0m                                    ?[90m# BaseSteps.validateHomePage()?[0m
+    ?[32mAnd ?[0m?[32muser ?[0m?[32m?[1mHanifa?[0m?[32m login using user ?[0m?[32m?[1mhanifanur.test?[0m?[32m and password ?[0m?[32m?[1mhanifatest?[0m ?[90m# BaseSteps.login(String,String,String)?[0m
+    ?[32mAnd ?[0m?[32muser go to ?[0m?[32m?[1mhttps://music.youtube.com/library/playlists?[0m              ?[90m# BaseSteps.goToURL(String)?[0m
+    ?[32mWhen ?[0m?[32muser create a New Playlist?[0m                                         ?[90m# BaseSteps.tapNewPlaylist()?[0m
+    ?[32mAnd ?[0m?[32muser verify the new created playlist?[0m                                ?[90m# BaseSteps.verifyNewPlaylist()?[0m
+    ?[32mAnd ?[0m?[32muser close browser?[0m                                                  ?[90m# BaseSteps.closeBrowser()?[0m
+@SmokeTest
+Feature: Search in Youtube Music
+  
+  I want search a song with exact keyword and get result from all sections
+
+  Scenario: User can search music video based on keyword           ?[90m# search.feature:6?[0m
+    ?[32mGiven ?[0m?[32muser open Youtube Music homepage?[0m                         ?[90m# BaseSteps.openYoutubeMusic()?[0m
+    ?[32mAnd ?[0m?[32muser see Music Youtube Home page?[0m                           ?[90m# BaseSteps.validateHomePage()?[0m
+    ?[32mWhen ?[0m?[32muser Search song with exact keyword ?[0m?[32m?[1mRaisa?[0m                 ?[90m# BaseSteps.searchKeyword(String)?[0m
+    ?[32mAnd ?[0m?[32muser press Enter?[0m                                           ?[90m# BaseSteps.pressEnterKey()?[0m
+    ?[32mThen ?[0m?[32muser verify the result page will appear with ?[0m?[32m?[1mall?[0m?[32m sections?[0m ?[90m# BaseSteps.verifySearchResultPage(String)?[0m
+    ?[32mAnd ?[0m?[32muser close browser?[0m                                         ?[90m# BaseSteps.closeBrowser()?[0m
+
+3 Scenarios (?[32m3 passed?[0m)
+22 Steps (?[32m22 passed?[0m)
+0m46.597s
+
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.2.1</a> at Dec 1, 2022 9:26:12 AM</p>
+</div>
+</div>
+</body>
+</html>

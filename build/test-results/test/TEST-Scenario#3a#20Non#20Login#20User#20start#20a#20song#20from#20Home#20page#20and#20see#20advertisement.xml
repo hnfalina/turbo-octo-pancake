@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Non Login User start a song from Home page and see advertisement" tests="10" skipped="0" failures="0" errors="0" timestamp="2022-12-01T02:25:31" hostname="hanifas-MacBook-Pro.local" time="17.738">
+  <properties/>
+  <testcase name="Given user open Youtube Music homepage" classname="Scenario: Non Login User start a song from Home page and see advertisement" time="0.0"/>
+  <testcase name="And user see Music Youtube Home page" classname="Scenario: Non Login User start a song from Home page and see advertisement" time="0.0"/>
+  <testcase name="When user click the first song in Quick picks section" classname="Scenario: Non Login User start a song from Home page and see advertisement" time="0.0"/>
+  <testcase name="Then user redirected to music video screen" classname="Scenario: Non Login User start a song from Home page and see advertisement" time="0.0"/>
+  <testcase name="And user verify ads is exist" classname="Scenario: Non Login User start a song from Home page and see advertisement" time="0.001"/>
+  <testcase name="And user verify music video start" classname="Scenario: Non Login User start a song from Home page and see advertisement" time="0.0"/>
+  <testcase name="And user see autoplay list in the right section of the screen" classname="Scenario: Non Login User start a song from Home page and see advertisement" time="0.0"/>
+  <testcase name="And user see video control bar in the bottom of the screen" classname="Scenario: Non Login User start a song from Home page and see advertisement" time="0.0"/>
+  <testcase name="And user close browser" classname="Scenario: Non Login User start a song from Home page and see advertisement" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Non Login User start a song from Home page and see advertisement" time="23.241"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 106.0.5249.61 (511755355844955cd3e264779baf0dd38212a4d0-refs/branch-heads/5249@{#569}) on port 31167
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1669861528.691][WARNING]: This version of ChromeDriver has not been tested with Chrome version 107.
+Dec 01, 2022 9:25:28 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>

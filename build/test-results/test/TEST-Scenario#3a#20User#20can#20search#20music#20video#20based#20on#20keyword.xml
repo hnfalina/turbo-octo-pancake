@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: User can search music video based on keyword" tests="7" skipped="0" failures="0" errors="0" timestamp="2022-12-01T02:26:11" hostname="hanifas-MacBook-Pro.local" time="1.853">
+  <properties/>
+  <testcase name="Given user open Youtube Music homepage" classname="Scenario: User can search music video based on keyword" time="0.0"/>
+  <testcase name="And user see Music Youtube Home page" classname="Scenario: User can search music video based on keyword" time="0.0"/>
+  <testcase name="When user Search song with exact keyword Raisa" classname="Scenario: User can search music video based on keyword" time="0.0"/>
+  <testcase name="And user press Enter" classname="Scenario: User can search music video based on keyword" time="0.001"/>
+  <testcase name="Then user verify the result page will appear with all sections" classname="Scenario: User can search music video based on keyword" time="0.0"/>
+  <testcase name="And user close browser" classname="Scenario: User can search music video based on keyword" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: User can search music video based on keyword" time="5.903"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 106.0.5249.61 (511755355844955cd3e264779baf0dd38212a4d0-refs/branch-heads/5249@{#569}) on port 9791
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1669861568.296][WARNING]: This version of ChromeDriver has not been tested with Chrome version 107.
+Dec 01, 2022 9:26:08 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>
